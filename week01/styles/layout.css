@@ -1,0 +1,91 @@
+/* Apply to all/multiple */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+main,
+aside {
+    background-color: black;
+    color: white;
+}
+
+/* Body and inside - [Start]*/
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+/* Header and inside - [Start]*/
+
+header {
+    grid-area: header;
+    padding: 1rem;
+}
+
+nav {
+    padding: 0 8rem;
+    background-color: darkgreen;
+    border-radius: 12px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header and inside - [End]*/
+
+/* Main and inside - [Start]*/
+
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+/* Main and inside - [End]*/
+
+/* Aside and inside - [Start]*/
+
+aside {
+    grid-area: aside;
+    padding: 1rem;
+}
+
+/* Aside and inside - [End]*/
+
+/* Footer and inside - [Start]*/
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Footer and inside - [End]*/
+
+/* Body and inside - [End]*/
