@@ -4,11 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kell Brine</title>
+    <meta name="description" content="This is the Home page of Kell Brine for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kell Brine">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>WDD 131 - Kell Brine</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/">Linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p46-p47#p46"
+                target="_blank">Scripture</a>
+            <a href="#" target="_blank">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Kell Brine</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="A photo of Kell Brine" width="300">
+            <p>Hello! I'm Kell Brine and I love to code, draw, and playing video games. I also love my pet donkey,
+                Nacho.</p>
+        </section>
+
+        <section class="card">
+            <h2>Mexico</h2>
+            <img src="images/mexico.webp" alt="The flag of mexico" width="400">
+            <p>Mexico, officially the United Mexican States, is a Latin American country known for its rich
+                pre-Columbian history, distinct culture, and diverse geography, including the world's largest pyramid,
+                Chichen Itza and the Great Pyramid of Cholula. It is the world's largest Spanish-speaking country and
+                the birthplace of chocolate and tomatoes.</p>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Kell Brine | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

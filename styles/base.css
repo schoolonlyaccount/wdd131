@@ -1,0 +1,129 @@
+/* Useable Variables */
+:root {
+    --my-color-1: #1f5989;
+    --my-color-2: white;
+    --my-color-3: black;
+}
+
+/* Apply To All */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling Body */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    background-color: var(--my-color-2);
+    color: var(--my-color-2)
+}
+
+/* Styling Header*/
+header {
+    text-align: center;
+
+    background-color: var(--my-color-1);
+
+    padding: 1rem;
+}
+
+#course-title {
+    display: block;
+
+    font-size: 2rem;
+}
+
+/* Styling Navigation */
+header nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+
+    font-size: 1.5rem;
+
+    background-color: #282828;
+
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: var(--my-color-2)
+}
+
+nav a:hover {
+    color: green;
+}
+
+/* Styling Main */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 2rem;
+
+    border: 2px solid var(--my-color-3);
+    border-radius: 12px;
+
+    max-width: 1828px;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+
+    border: 2px solid var(--my-color-3);
+    border-radius: 12px;
+
+    font-size: 2rem;
+
+    background-color: var(--my-color-1);
+    color: var(--my-color-2);
+
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+}
+
+.card {
+    border: 2px solid var(--my-color-3);
+    border-radius: 12px;
+
+    background-color: var(--my-color-2);
+    color: var(--my-color-3);
+
+    margin-top: -2rem;
+    padding: 1rem;
+}
+
+.card img {
+    float: right;
+
+    border: 2px solid var(--my-color-3);
+    border-radius: 12px;
+}
+
+.card p {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Styling Footer */
+footer {
+    background-color: var(--my-color-1);
+
+    text-align: center;
+
+    padding: 2rem;
+
+    font-size: 1.5rem;
+}
