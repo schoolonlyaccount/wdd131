@@ -1,5 +1,5 @@
 @media screen and (max-width: 769px) {
-    #weather h2:after {
+    #weather h2::after {
         content: '';
         display: block;
         width: 60px;

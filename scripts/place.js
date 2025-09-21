@@ -17,13 +17,16 @@ function calculateWindChill(tempC, speedKmh) {
 
 // Function to update wind chill display based on conditions
 function displayWindChill() {
-    const windChillElements = document.querySelectorAll('#windChill');
+    const windChill1 = document.getElementById('windChill');
+    const windChill2 = document.getElementById('windChill2');
 
     if (temperature <= 10 && windSpeed > 4.8) {
         const chill = calculateWindChill(temperature, windSpeed).toFixed(1);
-        windChillElements.forEach(el => el.textContent = `${chill} °C`);
+        windChill1.textContent = `${chill} °C`;
+        windChill2.textContent = `${chill} °C`;
     } else {
-        windChillElements.forEach(el => el.textContent = "N/A");
+        windChill1.textContent = "N/A";
+        windChill2.textContent = "N/A";
     }
 }
 
