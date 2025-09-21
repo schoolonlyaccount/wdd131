@@ -1,0 +1,70 @@
+@media screen and (max-width: 769px) {
+    #weather h2:after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url('/images/weather.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 10px auto 0 auto;
+    }
+
+    main img {
+        width: 769px;
+        margin-bottom: 0.3rem;
+    }
+
+    .mobile-only {
+        display: block;
+        background-color: var(--tertiary-color);
+        color: black;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .data h2,
+    .weather h2 {
+        padding: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .data {
+        box-shadow: 0 1px black;
+    }
+
+    .info-container1,
+    .info-container2 {
+        width: 290px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .info-item1,
+    .info-item2 {
+        display: flex;
+        margin-bottom: 6px;
+    }
+
+    .info-item1 label,
+    .info-item2 label {
+        width: 130px;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 12px;
+    }
+
+    .info-item1 span,
+    .info-item2 span {
+        flex: 1;
+        text-align: left;
+    }
+
+
+}

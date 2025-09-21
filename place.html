@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kell Brine</title>
+    <meta name="description"
+        content="This is the Place Assignment page of Kell Brine for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kell Brine">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+
+    <!-- JavaScript -->
+    <script src=" scripts/place.js" defer>
+    </script>
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 770px)" srcset="images/hero-large.webp" />
+            <source media="(max-width: 769px)" srcset="images/hero-small.webp" />
+            <img src="images/hero-small.webp" alt="Landscape drawing of Japan" />
+        </picture>
+        <div class="mobile-only">
+            <section class="data">
+                <h2>Data</h2>
+                <div class="info-container1">
+                    <div class="info-item1"><label>Area:</label><span>377,975 km²</span></div>
+                    <div class="info-item1"><label>Population:</label><span>124.8 million (2025 est.)</span></div>
+                    <div class="info-item1"><label>Capital:</label><span>Tokyo</span></div>
+                    <div class="info-item1"><label>Languages:</label><span>Japanese</span></div>
+                    <div class="info-item1"><label>Currency:</label><span>Japanese Yen (JPY)</span></div>
+                    <div class="info-item1"><label>Time Zone:</label><span>Japan Standard Time (UTC+9)</span></div>
+                    <div class="info-item1"><label>Calling Code:</label><span>+81</span></div>
+                    <div class="info-item1"><label>Internet TLD:</label><span>.jp</span></div>
+                </div>
+            </section>
+            <section class="weather" id="weather">
+                <h2>Weather</h2>
+                <div class="info-container2">
+                    <div class="info-item2"><label>Temperature:</label><span id="temperature">7 °C</span></div>
+                    <div class="info-item2"><label>Conditions:</label><span id="conditions">Partly Cloudy</span></div>
+                    <div class="info-item2"><label>Wind:</label><span id="windSpeed">10 km/h</span></div>
+                    <div class="info-item2"><label>Wind Chill:</label><span id="windChill">Calculating...</span></div>
+                </div>
+            </section>
+        </div>
+        <div class="desktop-only">
+            <section class="data2">
+                <h2>Data</h2>
+                <div class="info-container3">
+                    <div class="info-item3"><label>Area:</label><span> 377,975 km²</span></div>
+                    <div class="info-item3"><label>Population:</label><span> 124.8 million (2025 est.)</span></div>
+                    <div class="info-item3"><label>Capital:</label><span> Tokyo</span></div>
+                    <div class="info-item3"><label>Languages:</label><span> Japanese</span></div>
+                    <div class="info-item3"><label>Currency:</label><span> Japanese Yen (JPY)</span></div>
+                    <div class="info-item3"><label>Time Zone:</label><span> Japan Standard Time (UTC+9)</span></div>
+                    <div class="info-item3"><label>Calling Code:</label><span> +81</span></div>
+                    <div class="info-item3"><label>Internet TLD:</label><span> .jp</span></div>
+                </div>
+            </section>
+            <section class="weather2" id="weather2">
+                <h2>Weather ⛅</h2>
+                <div class="info-container4">
+                    <div class="info-item4"><label>Temperature:</label><span id="temperature"> 7 °C</span></div>
+                    <div class="info-item4"><label>Conditions:</label><span id="conditions"> Partly Cloudy</span></div>
+                    <div class="info-item4"><label>Wind:</label><span id="windSpeed"> 10 km/h</span></div>
+                    <div class="info-item4"><label>Wind Chill:</label><span id="windChill"> Calculating...</span></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> ❤️ Kell Brine ❤️ Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
