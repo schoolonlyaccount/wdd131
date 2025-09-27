@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #520f57;
+    --secondary-color: white;
+}
+
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', 'Roboto', sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+header nav a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card {
+    border: 1px solid silver;
+    padding: 1rem;
+    background-color: #eaeaea;
+}
+
+.temple-card h3 {
+    padding-bottom: 1rem;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.purple-label {
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
