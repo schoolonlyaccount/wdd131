@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kell Brine</title>
+    <meta name="description"
+        content="This is the Project Site page of Kell Brine for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kell Brine">
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+        :root {
+            --primary-color: #5043c0;
+            --secondary-color: #558488;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            background-color: white;
+            color: black;
+        }
+
+        h1,
+        h2,
+        header {
+            font-weight: 700;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        header,
+        p,
+        ul {
+            padding: 0.5rem;
+        }
+
+        section {
+            background-color: #558488;
+        }
+
+        .wireframes img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 20px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .blueviolet {
+            background-color: var(--primary-color);
+        }
+
+        .mutedteal {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Site Plan: Kell's Top Favorite Games</h1>
+    </header>
+
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>Kell's Top Favorite Games</strong></p>
+        <p>I chose this name because it represents the purpose of the site accurately.</p>
+    </section>
+
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The site will show Kell Brine's top 10 favorite games and game releases he's looking forward to. It will also
+            provide a way to contact him.</p>
+    </section>
+
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li>What is Kell Brine's favorite game?</li>
+            <li>Where can I find contact information for Kell Brine?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Color Schema</h2>
+        <p>
+            Primary color: Blue Violet <span class="color-box blueviolet"></span> —
+            used mainly as the <strong>background color</strong> for headings and the site header.
+        </p>
+        <p>
+            Secondary color: Muted Teal <span class="color-box mutedteal"></span> —
+            used mainly as the <strong>background color</strong> for content sections.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Roboto</strong> — used for all text.</li>
+        </ul>
+    </section>
+
+    <section class="wireframes">
+        <h2>Wireframes</h2>
+        <h3>Mobile View</h3>
+        <img src="images/mobile-wireframe.png" alt="Mobile wireframe sketch">
+
+        <h3>Desktop View</h3>
+        <img src="images/desktop-wireframe.png" alt="Desktop wireframe sketch">
+    </section>
+
+</body>
+
+</html>
