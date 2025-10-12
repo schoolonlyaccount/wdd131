@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kell Brine</title>
+    <meta name="description"
+        content="This is the anxious releases page for Kell's Top Favorite Games of Kell Brine for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kell Brine">
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/main-project.css" />
+    <link rel="stylesheet" href="styles/games-project.css" />
+
+    <!-- JavaScript -->
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Kell's Top Favorite Games</h1>
+        <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <div class="desktop-nav-container">
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="anxious-releases.html">Anxious Releases</a>
+                <a href="contact-me.html">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav-container">
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="anxious-releases.html">Anxious Releases</a>
+            <a href="contact-me.html">Contact Me</a>
+        </nav>
+    </div>
+
+    <main>
+        <h2 class="page-title">2026 - Looking Forward To...</h2>
+        <section class="game-grid2">
+            <ul class="game-grid2">
+                <!-- JavaScript will inject <li> elements -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> ❤️ Kell Brine ❤️ Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
