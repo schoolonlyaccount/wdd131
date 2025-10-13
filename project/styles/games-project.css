@@ -4,8 +4,8 @@
 .game-grid2 {
     display: grid;
     gap: 1.5rem;
-    padding: 2rem;
-    padding-bottom: 4rem;
+    margin: 0;
+    padding: 0 2rem 4rem;
     min-height: 500px;
 }
 
@@ -54,6 +54,7 @@
     height: auto;
     object-fit: contain;
     display: block;
+
 }
 
 .game-card .overlay {
