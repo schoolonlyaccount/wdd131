@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // Top 10 Favorite games
 const games = [
     {
-        title: "1st - SOMA",
-        image: "images/soma.jpg",
+        title: "1st Place",
+        image: "images/soma.webp",
         ratings: {
             music: 5,
             gameplay: 3,
@@ -51,8 +51,8 @@ const games = [
         }
     },
     {
-        title: "2nd - The Binding of Isaac",
-        image: "images/the-binding-of-isaac.jpg",
+        title: "2nd Place",
+        image: "images/the-binding-of-isaac.webp",
         ratings: {
             music: 4,
             gameplay: 5,
@@ -61,8 +61,8 @@ const games = [
         }
     },
     {
-        title: "3rd - Dead by Daylight",
-        image: "images/dead-by-daylight.jpg",
+        title: "3rd Place",
+        image: "images/dead-by-daylight.webp",
         ratings: {
             music: 4,
             gameplay: 5,
@@ -71,8 +71,8 @@ const games = [
         }
     },
     {
-        title: "4th - Dark Deception",
-        image: "images/dark-deception.jpg",
+        title: "4th Place",
+        image: "images/dark-deception.webp",
         ratings: {
             music: 5,
             gameplay: 5,
@@ -81,8 +81,8 @@ const games = [
         }
     },
     {
-        title: "5th - Resident Evil 4 Remake",
-        image: "images/resident-evil-4-remake.jpg",
+        title: "5th Place",
+        image: "images/resident-evil-4-remake.webp",
         ratings: {
             music: 5,
             gameplay: 5,
@@ -91,8 +91,8 @@ const games = [
         }
     },
     {
-        title: "6th - Amnesia: The Bunker",
-        image: "images/amnesia-the-bunker.jpg",
+        title: "6th Place",
+        image: "images/amnesia-the-bunker.webp",
         ratings: {
             music: 3,
             gameplay: 5,
@@ -101,8 +101,8 @@ const games = [
         }
     },
     {
-        title: "7th - Hollow Knight: Silksong",
-        image: "images/silksong.jpg",
+        title: "7th Place",
+        image: "images/silksong.webp",
         ratings: {
             music: 5,
             gameplay: 5,
@@ -111,8 +111,8 @@ const games = [
         }
     },
     {
-        title: "8th - Subnautica",
-        image: "images/subnautica.jpg",
+        title: "8th Place",
+        image: "images/subnautica.webp",
         ratings: {
             music: 5,
             gameplay: 4,
@@ -121,8 +121,8 @@ const games = [
         }
     },
     {
-        title: "9th - FNAF: Security Breach",
-        image: "images/fnaf-security-breach.jpg",
+        title: "9th Place",
+        image: "images/fnaf-security-breach.webp",
         ratings: {
             music: 4,
             gameplay: 3,
@@ -131,8 +131,8 @@ const games = [
         }
     },
     {
-        title: "10th - Doki Doki Literature Club",
-        image: "images/doki-doki-literature-club.jpg",
+        title: "10th Place",
+        image: "images/doki-doki-literature-club.webp",
         ratings: {
             music: 5,
             gameplay: 2,
@@ -146,33 +146,34 @@ const games = [
 const upcomingGames = [
     {
         title: "Dark Deception: Chapter 5",
-        image: "images/dark-deception-chapter-5.jpg",
+        image: "images/dark-deception-chapter-5.webp",
     },
     {
         title: "Subnautica 2",
-        image: "images/subnautica2.jpg",
+        image: "images/subnautica2.webp",
     },
     {
         title: "Moonshire",
-        image: "images/moonshire.jpg",
+        image: "images/moonshire.webp",
     },
     {
         title: "The Backworld",
-        image: "images/the-backworld.jpg",
+        image: "images/the-backworld.webp",
     },
     {
         title: "Dewdrop Dynasty",
-        image: "images/dewdrop-dynasty.jpg",
+        image: "images/dewdrop-dynasty.webp",
     },
     {
         title: "The Joy of Creation",
-        image: "images/joy-of-creation.jpg",
+        image: "images/joy-of-creation.webp",
     },
 ];
 
 // Display the games - For Top 10 Favorites
 function renderCards(gamesArray, selector, includeRatings = false) {
     const grid = document.querySelector(selector);
+
     grid.innerHTML = "";
 
     gamesArray.forEach(game => {
@@ -180,14 +181,18 @@ function renderCards(gamesArray, selector, includeRatings = false) {
         card.classList.add(includeRatings ? "game-card" : "game-card2");
 
         card.innerHTML = `
-            <img src="${game.image}" alt="${game.title} game cover" loading="lazy">
+            <img src="${game.image}" alt="${game.title} game cover" width="400" height="300" loading="lazy">
             ${includeRatings ? `
                 <div class="overlay">
                     <h2>${game.title}</h2>
-                    <p><strong>Music:</strong> ${"⭐".repeat(game.ratings.music)}</p>
-                    <p><strong>Gameplay:</strong> ${"⭐".repeat(game.ratings.gameplay)}</p>
-                    <p><strong>Story:</strong> ${"⭐".repeat(game.ratings.story)}</p>
-                    <p><strong>Replayability:</strong> ${"⭐".repeat(game.ratings.replayability)}</p>
+                    <p><strong>( Music )</strong></p>
+                    <p class="star">${"⭐".repeat(game.ratings.music)}</p>
+                    <p><strong>( Gameplay )</strong></p>
+                    <p class="star">${"⭐".repeat(game.ratings.gameplay)}</p>
+                    <p><strong>( Story )</strong></p>
+                    <p class="star">${"⭐".repeat(game.ratings.story)}</p>
+                    <p><strong>( Replayability )</strong></p>
+                    <p class="star">${"⭐".repeat(game.ratings.replayability)}</p>
                 </div>` : ''
             }
         `;

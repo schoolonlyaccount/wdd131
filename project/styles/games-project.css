@@ -3,19 +3,36 @@
 .game-grid,
 .game-grid2 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
     padding: 2rem;
     padding-bottom: 4rem;
+    min-height: 500px;
+}
+
+.game-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.game-grid2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gamecard {
+    display: flex;
+}
+
+.gamecard2 {
+    display: inline-block;
 }
 
 .game-card,
 .game-card2 {
-    position: relative;
+    flex-direction: column;
     border: 3px solid var(--secondary-color);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    background-color: #2b3746;
 }
 
 .game-card:hover,
@@ -23,31 +40,26 @@
     transform: scale(1.03);
 }
 
+.game-card img {
+    aspect-ratio: 6 / 9;
+}
+
+.game-card2 img {
+    aspect-ratio: 616 / 353;
+}
+
 .game-card img,
 .game-card2 img {
     width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
-    object-fit: cover;
 }
 
-.game-card img {
-    height: 500px;
-}
-
-.game-card2 img {
-    height: 100%;
-}
-
-.game-card .overlay,
-.game-card2 .overlay {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #2b3746;
-    color: white;
+.game-card .overlay {
     padding: 1rem;
     font-size: 1rem;
+    color: var(--tertiary-color);
     text-align: left;
 }
 
@@ -58,11 +70,20 @@
     margin: 0.5rem 0;
 }
 
+.game-card h2,
+.game-card2 h2,
+.star {
+    padding-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 769px) {
 
-    .game-grid,
-    .game-grid2 {
+    .game-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-grid2 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
