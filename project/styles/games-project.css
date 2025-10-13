@@ -33,6 +33,7 @@
     transition: transform 0.3s ease;
     background-color: #2b3746;
     padding: 1rem;
+    line-height: 0;
 }
 
 .game-card:hover,
@@ -68,6 +69,7 @@
     font-size: 1rem;
     color: var(--tertiary-color);
     text-align: left;
+    line-height: normal;
 }
 
 .overlay h2 {
