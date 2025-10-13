@@ -54,7 +54,7 @@
     height: auto;
     object-fit: contain;
     display: block;
-
+    object-position: top;
 }
 
 .game-card .overlay {
