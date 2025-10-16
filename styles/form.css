@@ -87,7 +87,7 @@ textarea {
 
 .rating {
     justify-content: center;
-    gap: 2.7rem;
+    gap: 2rem;
 }
 
 .rating label {
@@ -104,12 +104,17 @@ textarea {
 
 input[type="submit"] {
     background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
     padding: 0.8rem;
     margin-top: 1.5rem;
 }
 
 fieldset {
     border: none;
+}
+
+.featuresLegend {
+    margin-top: 1.5rem;
 }
 
 footer,
@@ -135,4 +140,20 @@ footer {
     font-size: 1.5rem;
     padding: 1rem;
     color: var(--quaternary-color);
+}
+
+label[for="productName"]::after,
+.ratingLegend::after,
+label[for="installDate"]::after {
+    content: " (Required)";
+    color: red;
+    font-size: 0.8rem;
+}
+
+label[for="reviewText"]::after,
+label[for="userName"]::after,
+.featuresLegend::after {
+    content: " (Optional)";
+    color: blue;
+    font-size: 0.8rem;
 }
