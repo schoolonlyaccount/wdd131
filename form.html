@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kell Brine</title>
+    <meta name="description"
+        content="This is the Product Review Form page of Kell Brine for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kell Brine">
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <!-- JavaScript -->
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+                <!-- JavaScript will populate the rest -->
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <label>★<input type="radio" name="rating" id="rating1" value="1" required></label>
+                    <label>★★<input type="radio" name="rating" id="rating2" value="2"></label>
+                    <label>★★★<input type="radio" name="rating" id="rating3" value="3"></label>
+                    <label>★★★★<input type="radio" name="rating" id="rating4" value="4"></label>
+                    <label>★★★★★<input type="radio" name="rating" id="rating5" value="5"></label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Which features did you find useful in the product? -->
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <p><i><b>(Check all that apply)</b></i></p>
+                <div class="usefulFeatures">
+                    <label class="feature"><input type="checkbox" id="feature1" name="features" value="durability">
+                        Durability</label>
+                    <label class="feature"><input type="checkbox" id="feature2" name="features" value="ease-of-use">
+                        Ease of Use</label>
+                    <label class="feature"><input type="checkbox" id="feature3" name="features" value="performance">
+                        Performance</label>
+                    <label class="feature"><input type="checkbox" id="feature4" name="features" value="design">
+                        Design</label>
+                </div>
+            </fieldset>
+
+            <!-- Written Review (Optional) -->
+            <label for="reviewText">Written Review <b style="color: blue;">(Optional)</b></label>
+            <textarea id="reviewText" name="reviewText"></textarea>
+
+            <!-- Your Name (Optional) -->
+            <label for="userName">Your Name <b style="color: blue;">(Optional)</b></label>
+            <input type="text" id="userName" name="userName">
+
+            <!-- Post Review -->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span> ❤️ Kell Brine ❤️ Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
